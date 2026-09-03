@@ -75,3 +75,11 @@ function showScreen(activeScreenId) {
   });
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+const dayCircles = document.querySelectorAll('.day-circle');
+
+dayCircles.forEach((circle) => {
+  circle.style.cursor = 'pointer';
+  circle.addEventListener('click', () => {
+    circle.classList.toggle('completed');
+  });
+});

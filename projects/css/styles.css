@@ -609,3 +609,9 @@ button, input {
     width: 100%;
   }
 }
+.day-circle.completed {
+  background-color: var(--eda-yellow);
+  color: var(--eda-text-black);
+  font-weight: 700;
+  border-color: var(--eda-yellow);
+}
