@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning online</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="w-container">
+        
+        <!-- Card 1 -->
+        <div class="stepper-wrapper">
+            <div class="stepper-line"></div>
+            <div class="step-circle active" id="step-indicator-1">1</div>
+            <div class="step-circle" id="step-indicator-2">2</div>
+            <div class="step-circle" id="step-indicator-3">3</div>
+            <div class="step-circle" id="step-indicator-4">4</div>
+        </div>
+
+        <!-- STEP 1: What brings you here? -->
+        <div class="step-content active" id="step-1">
+            <h2 class="step-title">What brings you here?</h2>
+            <p class="step-subtitle">Select up to 2 options</p>
+
+            <div class="option-grid">
+                <button class="option-card" data-max="2">
+                    <i class="fa-solid fa-plus icon-add"></i>
+                    <span>Learn something new</span>
+                </button>
+                <button class="option-card" data-max="2">
+                    <i class="fa-solid fa-plus icon-add"></i>
+                    <span>Advance my career</span>
+                </button>
+                <button class="option-card" data-max="2">
+                    <i class="fa-solid fa-plus icon-add"></i>
+                    <span>Master a specific skill</span>
+                </button>
+                <button class="option-card" data-max="2">
+                    <i class="fa-solid fa-plus icon-add"></i>
+                    <span>Collaborate or network</span>
+                </button>
+                <button class="option-card" data-max="2">
+                    <i class="fa-solid fa-plus icon-add"></i>
+                    <span>Support school/university work</span>
+                </button>
+            </div>
+        </div>
+
+        <!--Card 2-->
+
+        <!-- STEP 2: Pick your areas of interest -->
+        <div class="step-content" id="step-2">
+            <h2 class="step-title">Pick your areas of interest</h2>
+            <p class="step-subtitle">Select up to 5 options</p>
+
+            <!-- Search bar -->
+            <div class="search-box-wrapper mb-4">
+                <div class="search-input-group">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" placeholder="What do you want to learn" class="search-input">
+                    <button class="search-submit-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="category-group">
+                <p class="category-label">Tech</p>
+                <div class="option-grid">
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Web Dev</span></button>
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Mobile Dev</span></button>
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>UI/UX</span></button>
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>AI</span></button>
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Cybersecurity</span></button>
+                </div>
+            </div>
+
+            <div class="category-group">
+                <p class="category-label">Business</p>
+                <div class="option-grid">
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Marketing</span></button>
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Finance</span></button>
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Entrepreneurship</span></button>
+                </div>
+            </div>
+
+            <div class="category-group">
+                <p class="category-label">Academic</p>
+                <div class="option-grid">
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Math</span></button>
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Science</span></button>
+                    <button class="option-card" data-max="5"><i class="fa-solid fa-plus icon-add"></i> <span>Languages</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3-->
+
+        <!-- STEP 3: Your Current Role -->
+        <div class="step-content" id="step-3">
+            <h2 class="step-title">Your Current Role</h2>
+            <p class="step-subtitle">Select 1 options</p>
+
+            <div class="search-box-wrapper mb-4">
+                <div class="search-input-group">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" placeholder="What do you want to learn" class="search-input">
+                    <button class="search-submit-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="option-grid">
+                <button class="option-card single-select"><i class="fa-solid fa-plus icon-add"></i> <span>Student</span></button>
+                <button class="option-card single-select"><i class="fa-solid fa-plus icon-add"></i> <span>Working Professional</span></button>
+                <button class="option-card single-select"><i class="fa-solid fa-plus icon-add"></i> <span>Intern / Trainee</span></button>
+                <button class="option-card single-select"><i class="fa-solid fa-plus icon-add"></i> <span>Freelancer / Self-employed</span></button>
+                <button class="option-card single-select"><i class="fa-solid fa-plus icon-add"></i> <span>Job Seeker</span></button>
+                <button class="option-card single-select"><i class="fa-solid fa-plus icon-add"></i> <span>Other</span></button>
+            </div>
+        </div>
+
+        <!--Card 4-->
+
+        <!-- STEP 4: Highest level of education -->
+        <div class="step-content" id="step-4">
+            <h2 class="step-title">What's your highest level of education?</h2>
+
+            <div class="radio-option-list">
+                <label class="radio-card selected">
+                    <span>Less than high school diploma</span>
+                    <input type="radio" name="education" checked>
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-card">
+                    <span>High school diploma</span>
+                    <input type="radio" name="education">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-card">
+                    <span>Bachelor's degree</span>
+                    <input type="radio" name="education">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-card">
+                    <span>Master's degree</span>
+                    <input type="radio" name="education">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="radio-card">
+                    <span>Doctorate degree</span>
+                    <input type="radio" name="education">
+                    <span class="custom-radio"></span>
+                </label>
+            </div>
+        </div>
+
+        <!--  Navigation Buttons -->
+        <div class="wizard-actions">
+            <button class="btn-back" id="backBtn" style="visibility: hidden;">
+                <i class="fa-solid fa-arrow-left"></i> Back
+            </button>
+            <button class="btn-next" id="nextBtn">
+                Next <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- JS links -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
