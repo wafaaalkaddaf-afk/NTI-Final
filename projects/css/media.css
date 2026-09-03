@@ -1,0 +1,71 @@
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+/* 0 : 767.98 */
+@media (max-width: 767.98px) {
+    .custom-card, 
+    .hero-img-box, 
+    .eat-card, 
+    .feature-item, 
+    .organic-content {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .d-flex {
+        column-gap: 4%;
+        row-gap: 15px;
+    }
+
+    .justify-content-between {
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .hero-desc, 
+    .banner-content p {
+        width: 100%;
+    }
+
+    .banner-feat-item {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+/* 0 : 575.98 */
+@media (max-width: 575.98px) {
+    .custom-card, 
+    .hero-img-box, 
+    .eat-card, 
+    .feature-item, 
+    .organic-content, 
+    .banner-feat-item {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .d-sm-none {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+/* Print */
+@media print {
+    .d-none-print {
+        display: none;
+    }
+}
