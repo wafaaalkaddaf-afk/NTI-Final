@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EdA - EdTech Platform</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">EdA</div>
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="What do you want to learn">
+
+        <button id="searchBtn">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="#" class="nav-link-custom" data-page="coursesPage">
+            Home
+        </a>
+
+        <a href="#" class="nav-link-custom" data-page="coursesPage">
+            Dashboard
+        </a>
+
+        <a href="#" class="nav-link-custom" data-page="coursesPage">
+            My Courses
+        </a>
+
+        <button id="notificationBtn">
+            <i class="fa-regular fa-bell"></i>
+        </button>
+
+        <div class="profile-wrapper">
+
+            <button id="profileNav" class="profile-nav">
+
+                <img
+                    src="images/image.prof.svg"
+                    class="profile-img"
+                    alt="Profile">
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </button>
+
+            <div id="profileDropdown" class="profile-dropdown">
+
+                <button data-profile-page="profilePage">
+                    Profile
+                </button>
+
+                <button id="myPlanButton">
+                    My plan
+                </button>
+
+                <button data-profile-page="settingsPage">
+                    Settings
+                </button>
+
+                <button id="logoutDropdown">
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section id="coursesPage" class="page active-page">
+
+    <main class="main-content">
+
+        <h1>My Courses</h1>
+
+        <div class="filters">
+
+            <button class="filter-btn" id="sortBtn">
+                <i class="fa-solid fa-arrow-up-wide-short"></i>
+                Sort
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <button class="filter-btn" id="categoryBtn">
+                <i class="fa-solid fa-filter"></i>
+                Category
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+        </div>
+
+        <div class="course-status">
+
+            <button class="status-btn active" data-status="all">
+                All <span>7</span>
+            </button>
+
+            <button class="status-btn" data-status="progress">
+                <span class="dot yellow"></span>
+                In Progress <span>3</span>
+            </button>
+
+            <button class="status-btn" data-status="completed">
+                <span class="dot green"></span>
+                Completed <span>2</span>
+            </button>
+
+            <button class="status-btn" data-status="not-started">
+                <span class="dot red"></span>
+                Not Started <span>2</span>
+            </button>
+
+        </div>
+
+        <section class="course" data-course-status="completed">
+
+            <div class="course-title">
+
+                <div class="course-info">
+
+                    <span class="check">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Introduction to Python Programming
+                        </strong>
+
+                        <p>
+                            3 Modules · 7 hours
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button class="arrow-btn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+            </div>
+
+
+            <div class="modules">
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>Module 1: Python Fundamentals</h3>
+
+                        <p>100% Complete</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar completed"
+                                style="width:100%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>Module 2: Control Flow in Python</h3>
+
+                        <p>100% Complete</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar completed"
+                                style="width:100%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>
+                            Module 3: Project – Build a Simple App
+                        </h3>
+
+                        <p>100% Complete</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar completed"
+                                style="width:100%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        View
+                    </button>
+
+                </div>
+
+                <div class="certificate">
+
+                    <div class="certificate-text">
+
+                        <span class="certificate-check">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <strong>
+                            Congratulations on completing
+                            Introduction to Python Programming
+                            Certificate!
+                        </strong>
+
+                    </div>
+
+                    <div class="certificate-buttons">
+
+                        <button class="yellow-btn">
+                            View
+                        </button>
+
+                        <button class="linkedin-btn">
+                            Add to LinkedIn
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="course" data-course-status="progress">
+
+            <div class="course-title">
+
+                <div class="course-info">
+
+                    <span class="empty-circle"></span>
+
+                    <div>
+
+                        <strong>
+                            UI/UX Design Masterclass
+                        </strong>
+
+                        <p>
+                            6 Modules · 5 hours
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button class="arrow-btn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+            </div>
+
+
+            <div class="modules">
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>
+                            Module 1: Introduction to UI/UX Design
+                        </h3>
+
+                        <p>100% Complete</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar completed"
+                                style="width:100%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>Module 2: UX Research</h3>
+
+                        <p>60% Complete</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar progress-60"
+                                style="width:60%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        Resume
+                    </button>
+
+                </div>
+
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>Module 3: Wireframing Basics</h3>
+
+                        <p>30% Complete</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar progress-30"
+                                style="width:30%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        Resume
+                    </button>
+
+                </div>
+
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>Module 4: UI Principles</h3>
+
+                        <p>Not Started</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar not-started"
+                                style="width:0%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        Start
+                    </button>
+
+                </div>
+
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>Module 5: Prototyping in Figma</h3>
+
+                        <p>Not Started</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar not-started"
+                                style="width:0%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        Start
+                    </button>
+
+                </div>
+
+
+                <div class="module">
+
+                    <div class="module-text">
+
+                        <h3>Module 6: Final Project</h3>
+
+                        <p>Not Started</p>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar not-started"
+                                style="width:0%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button class="yellow-btn module-btn">
+                        Start
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</section>
+
+<section id="quizPage" class="page">
+
+    <main class="quiz-page">
+
+        <div class="quiz-header">
+
+            <div class="quiz-title">
+
+                <button id="backFromQuiz" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <div>
+
+                    <h1>Quiz: Python Basics</h1>
+
+                    <p>
+                        10 Questions · 20 minutes · 10 points
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timer">
+                00:00
+            </div>
+
+        </div>
+
+
+        <div class="questions">
+
+            <!-- Q1 -->
+
+            <div class="question-card">
+
+                <h3>
+                    1. What is the correct syntax to output
+                    "Hello, World" in Python?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q1" value="correct">
+                    print("Hello, World")
+                </label>
+
+                <label>
+                    <input type="radio" name="q1">
+                    echo("Hello, World")
+                </label>
+
+                <label>
+                    <input type="radio" name="q1">
+                    print("Hello, World")
+                </label>
+
+                <label>
+                    <input type="radio" name="q1">
+                    System.out.print("Hello, World")
+                </label>
+
+            </div>
+
+
+            <!-- Q2 -->
+
+            <div class="question-card">
+
+                <h3>
+                    2. Which of the following is a valid
+                    variable name in Python?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q2">
+                    2name
+                </label>
+
+                <label>
+                    <input type="radio" name="q2">
+                    my-name
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="correct">
+                    my_name
+                </label>
+
+                <label>
+                    <input type="radio" name="q2">
+                    my name
+                </label>
+
+            </div>
+
+
+            <!-- Q3 -->
+
+            <div class="question-card">
+
+                <h3>
+                    3. What data type is the result of:
+                    type(5.0)
+                </h3>
+
+                <label>
+                    <input type="radio" name="q3">
+                    int
+                </label>
+
+                <label>
+                    <input type="radio" name="q3">
+                    str
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="correct">
+                    float
+                </label>
+
+                <label>
+                    <input type="radio" name="q3">
+                    bool
+                </label>
+
+            </div>
+
+
+            <!-- Q4 -->
+
+            <div class="question-card">
+
+                <h3>
+                    4. Which of the following is used to get
+                    input from the user in Python?
+                </h3>
+
+                <label>
+                    <input type="radio" name="q4" value="correct">
+                    input()
+                </label>
+
+                <label>
+                    <input type="radio" name="q4">
+                    get()
+                </label>
+
+                <label>
+                    <input type="radio" name="q4">
+                    scan()
+                </label>
+
+                <label>
+                    <input type="radio" name="q4">
+                    prompt()
+                </label>
+
+            </div>
+
+
+            <!-- Q5 -->
+
+            <div class="question-card question-five">
+
+                <h3>
+                    5. What will the following code output?
+                </h3>
+
+                <div class="code-question">
+
+                    <pre>
+x = 3
+y = 2
+print(x + y)
+                    </pre>
+
+                    <div>
+
+                        <label>
+                            <input type="radio" name="q5" value="correct">
+                            5
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q5">
+                            32
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q5">
+                            3 + 2
+                        </label>
+
+                        <label>
+                            <input type="radio" name="q5">
+                            None
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="quiz-actions">
+
+            <button id="submitQuizBtn" class="submit-btn">
+                Submit
+            </button>
+
+            <button id="saveDraftBtn" class="draft-btn">
+                Save draft
+            </button>
+
+        </div>
+
+    </main>
+
+</section>
+
+<section id="resultPage" class="page">
+
+    <main class="result-page">
+
+        <div class="result-layout">
+
+            <aside class="quiz-sidebar">
+
+                <h3>
+                    Introduction to Python Programming
+                </h3>
+
+                <p>Module 1</p>
+
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Installing Python & VS Code
+                    <small>7 min</small>
+                </div>
+
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Hello World & Basic Syntax
+                    <small>10 min</small>
+                </div>
+
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Variables, and Data Types
+                    <small>12 min</small>
+                </div>
+
+                <div class="sidebar-item active">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Quiz: Python Basics
+                    <small>10 min</small>
+                </div>
+
+            </aside>
+
+
+            <div class="result-content">
+
+                <div class="result-top">
+
+                    <span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Previous
+                    </span>
+
+                    <span>
+                        Next
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="result-card">
+
+                    <div class="submitted-badge">
+                        Submitted
+                    </div>
+
+                    <h1>Quiz: Python Basics</h1>
+
+                    <p>
+                        10 Questions · 20 minutes · 10 points
+                    </p>
+
+                    <div class="grade-box">
+
+                        <span>Your grade</span>
+
+                        <strong id="scoreValue">
+                            5/5
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+<section id="profilePage" class="page">
+
+    <main class="profile-page">
+
+        <div class="profile-layout">
+
+            <aside class="profile-left">
+
+                <img
+                    src="images/image.prof.svg"
+                    class="profile-large-img"
+                    alt="Profile">
+
+                <h2>John Cena</h2>
+
+                <p>johncena@gmail.com</p>
+
+                <button class="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </button>
+
+            </aside>
+
+
+            <div class="profile-settings">
+
+                <h1>Profile Settings</h1>
+
+                <div class="profile-card">
+
+                    <h2>Contact Information</h2>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                value="john@example.com">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input
+                                type="text"
+                                placeholder="Phone number"
+                                value="+20 100 000 0000">
+
+                        </div>
+
+                    </div>
+
+
+                    <select>
+
+                        <option>
+                            Preferred Contact Method
+                        </option>
+
+                        <option>Email</option>
+
+                        <option>Phone</option>
+
+                    </select>
+
+
+                    <textarea
+                        placeholder="Bio">I am a student interested in programming and technology.</textarea>
+
+
+                    <button id="saveProfileBtn" class="save-btn">
+                        Save Changes
+                    </button>
+
+                </div>
+
+                <div class="profile-card">
+
+                    <h2>Courses</h2>
+
+                    <div class="google-course">
+
+                        <i class="fa-brands fa-google"></i>
+
+                        <div>
+
+                            <strong>
+                                Google Google UX Design
+                                Professional Certificate
+                            </strong>
+
+                            <small>
+                                Completed October 2023
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="profile-card visibility">
+
+                    <div>
+
+                        <strong>
+                            Profile Visibility
+                        </strong>
+
+                        <small>
+                            Control who can see your profile
+                        </small>
+
+                    </div>
+
+
+                    <label class="switch">
+
+                        <input type="checkbox" checked>
+
+                        <span></span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+<section id="settingsPage" class="page">
+
+    <main class="account-page">
+
+        <div class="account-layout">
+
+            <aside class="account-menu">
+
+                <button class="account-tab active">
+                    <i class="fa-solid fa-user"></i>
+                    Account Settings
+                </button>
+
+                <button class="account-tab">
+                    <i class="fa-solid fa-bell"></i>
+                    Notification Settings
+                </button>
+
+                <button class="account-tab">
+                    <i class="fa-solid fa-sliders"></i>
+                    Learning Preferences
+                </button>
+
+                <button class="account-tab">
+                    <i class="fa-solid fa-lock"></i>
+                    Security & Privacy
+                </button>
+
+            </aside>
+
+
+            <div class="account-content">
+
+                <h1>Account Settings</h1>
+
+                <div class="account-box">
+
+                    <div class="account-row">
+
+                        <div>
+
+                            <h2>Change Email</h2>
+
+                            <p>
+                                Update your password to keep your
+                                account secure.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </div>
+
+
+                    <div class="account-row">
+
+                        <div>
+
+                            <h2>Change Password</h2>
+
+                            <p>
+                                Update your password to keep your
+                                account secure.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </div>
+
+
+                    <div class="account-row">
+
+                        <div>
+
+                            <h2>Connected Accounts</h2>
+
+                            <p>
+                                See where you're logged in and
+                                sign out remotely.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </div>
+
+
+                    <div class="account-row delete-row">
+
+                        <div>
+
+                            <h2>Delete My Account</h2>
+
+                            <p>
+                                Permanently remove your account
+                                and all data.
+                            </p>
+
+                        </div>
+
+                        <button id="deleteAccountBtn">
+                            Delete
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-logo">
+
+        <div class="logo">
+            EdA
+        </div>
+
+        <p>
+            Get started now try our product
+        </p>
+
+
+        <div class="email-box">
+
+            <input
+                type="email"
+                placeholder="Enter your email here">
+
+            <button>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#" data-page="coursesPage">
+                Home
+            </a>
+
+            <a href="#" data-page="coursesPage">
+                Courses
+            </a>
+
+            <a href="#">
+                About Us
+            </a>
+
+            <a href="#">
+                Blog
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Support</h3>
+
+            <a href="#">
+                Help center
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+            <a href="#">
+                Terms of Service
+            </a>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Report a Problem
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2025 EdA. All rights reserved.
+    </div>
+
+</footer>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="JS/script.js"></script>
+
+</body>
+
+</html>
