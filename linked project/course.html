@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EdA </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/dash-course.css">
+</head>
+
+<body>
+     <!--Header-->
+    <header class="top">
+      <div class="container top-inner">
+        <a class="logo" href="#top">EdA</a>
+
+        <form class="search" id="searchForm">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="searchInput" type="search" placeholder="What do you want to learn" />
+          <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <nav class="menu">
+          <a class="active" href="home.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="mycourses.html">My Courses</a>
+          <button class="small-icon" type="button"><i class="fa-regular fa-bell"></i></button>
+          <!--profile menu -->
+          <div class="profile-box">
+            <button class="profile" id="profileButton" type="button">
+              <img src="image/OIP.jpeg" class="profile_img">
+              <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="profile-menu" id="profileMenu">
+              <a href="#top">Profile</a>
+              <a href="#top">My plan</a>
+              <a href="#top">Settings</a>
+              <a href="#top">Logout</a>
+            </div>
+          </div>
+        </nav>
+        <button class="menu-button" id="menuButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <div class="container my-4">
+        <div id="courseDetail" class="row gy-4">
+            <div class="col-12 col-lg-3">
+            <h4 class=" font-h7 text-dark mb-4 cursor-pointer" onclick="showScreen('courseDetail')">
+         Introduction to Python Programming </h4>
+         <div class="mb-4">
+        <div class="d-flex justify-content-between align-items-center font-s2 text-dark mb-3 cursor-pointer" onclick="showScreen('courseDetail')">
+         <span>Courses Material</span>
+        <i class="fa-solid fa-angle-up"></i>
+          </div>
+         <div class="d-flex flex-column gap-2">
+         <button class="btn btn-eda-yellow text-start w-100 py-3 px-3 rounded-3 font-b2" type="button" onclick="showScreen('courseDetail')">
+            Module 1
+             </button>
+          <button class="btn btn-light bg-transparent border-0 text-start w-100 py-3 px-3 rounded-3 text-secondary font-b2" type="button">
+                Module 2
+             </button>
+            <button class="btn btn-light bg-transparent border-0 text-start w-100 py-3 px-3 rounded-3 text-secondary font-b2" type="button">
+              Module 3
+             </button>
+             </div>
+           </div>
+          <div class="d-flex justify-content-between align-items-center font-s2 text-dark pt-2 cursor-pointer">
+             <span>Grades</span>
+            <i class="fa-solid fa-angle-down"></i>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="mb-4">
+             <h4 class="font-h7 text-dark mb-1">Module 1: Python Fundamentals</h4>
+           <p class="text-secondary font-b1 mb-0">3 Videos  · 40 minutes  · 1 quiz</p>
+        </div>             
+          <div class="d-flex flex-column gap-3"> 
+            <div class="card shadow-sm border-0 rounded-4 p-3 bg-white">
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                  <i class="fa-solid fa-play"></i>
+                <div>
+                <h6 class="card-title mb-0 font-b2 text-dark">Installing Python & VS Code</h6>
+        <p class="card-text text-secondary font-b1 mb-0"><small>Video · 7 min</small></p>
+         </div>
+         </div>
+         <button class="btn btn-eda-yellow px-4 py-2 rounded-pill font-b2" type="button" onclick="showScreen('videoPlayer')">
+        Open </button>
+              </div>
+            </div>          
+      <div class="card shadow-sm border-0 rounded-4 p-3 bg-white">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                                <i class="fa-solid fa-play"></i>
+
+                                <div>
+                                    <h6 class="card-title mb-0 font-b2 text-dark">Hello World & Basic Syntax</h6>
+                                    <p class="card-text text-secondary font-b1 mb-0"><small>Video · 10 min</small></p>
+                                </div>
+                            </div>
+                            <button class="btn btn-eda-yellow px-4 py-2 rounded-pill font-b2" type="button" onclick="showScreen('videoPlayer')">
+                                Open
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm border-0 rounded-4 p-3 bg-white">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                                <i class="fa-solid fa-play"></i>
+
+                                <div>
+                                    <h6 class="card-title mb-0 font-b2 text-dark">Variables, Data Types, and Input</h6>
+                                    <p class="card-text text-secondary font-b1 mb-0"><small>Video · 12 min</small></p>
+                                </div>
+                            </div>
+                            <button class="btn btn-eda-yellow px-4 py-2 rounded-pill font-b2" type="button" onclick="showScreen('videoPlayer')">
+                                Open
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm border-0 rounded-4 p-3 bg-white">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('quizPage')">
+                               <i class="fa-solid fa-file"></i>
+
+                                <div>
+                                    <h6 class="card-title mb-0 font-b2 text-dark">Quiz: Python Basics</h6>
+                                    <p class="card-text text-secondary font-b1 mb-0"><small>Quiz · 10 min</small></p>
+                                </div>
+                            </div>
+                            <button class="btn btn-eda-yellow px-4 py-2 rounded-pill font-b2" type="button" onclick="showScreen('quizPage')">
+                                Open
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="card shadow-sm border-0 rounded-4 p-4 bg-white">
+                    <h5 class="card-title font-s2 text-dark mb-2">Weekly goal progress tracker</h5>
+                    <p class="card-text text-secondary font-b1 mb-3">I'm committed to learning 5 days a week on Coursera.</p>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="day-circle">M</span>
+                        <span class="day-circle">T</span>
+                        <span class="day-circle">W</span>
+                        <span class="day-circle">T</span>
+                        <span class="day-circle">F</span>
+                        <span class="day-circle">S</span>
+                        <span class="day-circle">S</span>
+                    </div>
+                    <a href="#" class="text-primary text-decoration-none font-b2">Edit Goal</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- video-->
+        <div id="videoPlayer" class="row gy-4 d-none">
+            <div class="col-12 col-lg-3">
+                <h4 class="font-h7 text-dark mb-4 cursor-pointer" onclick="showScreen('courseDetail')">
+                    Introduction to Python Programming
+                </h4>
+                <div class="d-flex justify-content-between align-items-center font-s2 text-dark mb-3 cursor-pointer" onclick="showScreen('courseDetail')">
+                    <span>Module 1</span>
+                     <i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                 <div class="card bg-eda-yellow border-0 rounded-4 p-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                     <div class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-play"></i>
+            <div>
+                <h6 class="mb-0 font-b2 text-dark">Installing Python & VS Code</h6>
+             <small class="text-dark-50 font-b1">7 min</small>
+          </div>
+          </div>
+          </div>
+         <div class="p-3 text-secondary d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                   <i class="fa-solid fa-play"></i>
+                 <div>
+                 <h6 class="mb-0 font-b2 text-dark">Hello World & Basic Syntax</h6>
+                 <small class="text-secondary font-b1">10 min</small>
+                 </div>
+                 </div>
+<div class="p-3 text-secondary d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                     <i class="fa-solid fa-play"></i>
+                <div>
+              <h6 class="mb-0 font-b2 text-dark">Variables, and Data Types</h6>
+                <small class="text-secondary font-b1">12 min</small>
+             </div>
+                   </div>
+ <div class="p-3 text-secondary d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('quizPage')">
+        <i class="fa-solid fa-file"></i><div>
+      <h6 class="mb-0 font-b2 text-dark">Quiz: Python Basics</h6>
+       <small class="text-secondary font-b1">10 min</small>
+                 </div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="col-12 col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="font-h7 text-dark mb-0">Installing Python & VS Code</h4>
+                    <button class="btn btn-link text-dark text-decoration-none font-s2 d-flex align-items-center gap-1 p-0"
+                        type="button" onclick="showScreen('quizPage')">
+                        Next <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="card shadow-sm border-0 rounded-4 overflow-hidden bg-black">
+                    <video class="w-100 d-block" controls poster="video/23355-334950213_medium.mp4">
+                        <source src="video/23355-334950213_medium.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- quiz  -->
+        <div id="quizPage" class="row gy-4 d-none">
+            <div class="col-12 col-lg-3">
+                <h4 class="font-h7 text-dark mb-4 cursor-pointer" onclick="showScreen('courseDetail')">
+                    Introduction to Python Programming
+                </h4>
+                <div class="d-flex justify-content-between align-items-center font-s2 text-dark mb-3 cursor-pointer" onclick="showScreen('courseDetail')">
+                    <span>Module 1</span>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <div class="p-3 d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                        <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                        <div>
+                            <h6 class="mb-0 font-b2 text-dark">Installing Python & VS Code</h6>
+                            <small class="text-secondary font-b1">7 min</small>
+                        </div>
+                      </div>
+                    <div class="p-3 d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                        <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                        <div>
+                            <h6 class="mb-0 font-b2 text-dark">Hello World & Basic Syntax</h6>
+                            <small class="text-secondary font-b1">10 min</small>
+                        </div>
+                    </div>
+                    <div class="p-3 d-flex align-items-center gap-3 cursor-pointer" onclick="showScreen('videoPlayer')">
+                        <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                        <div>
+                            <h6 class="mb-0 font-b2 text-dark">Variables, and Data Types</h6>
+                            <small class="text-secondary font-b1">12 min</small>
+                        </div>
+                    </div>
+                    <div class="card bg-eda-yellow border-0 rounded-4 p-3 cursor-pointer" onclick="showScreen('quizPage')">
+                        <div class="d-flex align-items-center gap-3">
+                          <i class="fa-solid fa-file"></i>
+                            <div>
+                                <h6 class="mb-0 font-b2 text-dark">Quiz: Python Basics</h6>
+                                <small class="text-dark-50 font-b1">10 min</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="font-h7 text-dark mb-0">Quiz: Python Basics</h4>
+                    <div class="d-flex align-items-center gap-3">
+                        <button class="btn btn-link text-dark text-decoration-none font-s2 d-flex align-items-center gap-1 p-0"
+                            type="button" onclick="showScreen('videoPlayer')">
+                            <i class="bi bi-arrow-left"></i> Previous
+                        </button>
+                        <button class="btn btn-link text-dark text-decoration-none font-s2 d-flex align-items-center gap-1 p-0"
+                            type="button" onclick="showScreen('courseDetail')">
+                            Next <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column gap-4">
+                 <div class="card shadow-sm border-0 rounded-4 p-4 bg-white">
+                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <div>
+                <h5 class="card-title font-h7 text-dark mb-1">Quiz: Python Basics</h5>
+                 <p class="card-text text-secondary font-b1 mb-0">10 Questions · 20 minutes · 10 points</p>
+                </div>
+                    <button class="btn btn-eda-yellow px-5 py-2 rounded-3 font-b2" type="button">Start</button>
+                     </div>
+                    </div>
+                   <div class="card shadow-sm border-0 rounded-4 p-4 bg-white">
+             <h5 class="card-title font-s2 text-dark mb-2">Your grade</h5>
+            <p class="card-text text-secondary font-b1 mb-0">You haven't submitted this yet. We keep your highest score.</p>
+             </div>
+         </div>
+       
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/dashscript.js"></script>
+</body>
+
+</html>
