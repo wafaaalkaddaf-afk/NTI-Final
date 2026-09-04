@@ -39,14 +39,16 @@ function updateWizard() {
         backBtn.style.visibility = "visible";
     }
 
-    // Change Next button text on final step
-    if (currentStep === totalSteps) {
-        nextBtn.innerHTML = 'Finish <i class="fa-solid fa-check"></i>';
-    } else {
-        nextBtn.innerHTML = 'Next <i class="fa-solid fa-arrow-right"></i>';
-    }
-}
+   if (currentStep === totalSteps) {
+    nextBtn.innerHTML = 'Finish <i class="fa-solid fa-check"></i>';
 
+    nextBtn.onclick = function () {
+        window.location.href = "home.html";
+    };
+} else {
+    nextBtn.innerHTML = 'Next <i class="fa-solid fa-arrow-right"></i>';
+}
+}
 // Option Card selection (Multi-select with max limit)
 document.querySelectorAll(".option-card:not(.single-select)").forEach((card) => {
     card.addEventListener("click", function () {
