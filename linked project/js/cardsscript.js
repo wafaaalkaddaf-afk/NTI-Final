@@ -9,9 +9,7 @@ nextBtn.addEventListener("click", () => {
     if (currentStep < totalSteps) {
         currentStep++;
         updateWizard();
-    } else {
-        alert("Form Submitted Successfully!");
-    }
+    } 
 });
 
 backBtn.addEventListener("click", () => {
